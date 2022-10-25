@@ -3,7 +3,7 @@ const fetch = (...args) => import ('node-fetch').then(({default: fetch}) => fetc
 const {json} = require('body-parser');
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 80;
 const router = require('./routes/index');
 app.use('/', router);
 
